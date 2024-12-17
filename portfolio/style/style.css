@@ -1,11 +1,6 @@
 /* Reset básico para garantir consistência no layout */
-* 
-{
-scroll-behavior: smooth;
-}
-
-
-{
+* {
+    scroll-behavior: smooth;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -30,16 +25,16 @@ header {
 
 header h1 {
     font-size: 2.5rem;
-    color: #2c3e50;
+    color: #2c3e50; /* Mantido */
 }
 
 header p {
     font-size: 1rem;
-    color: #7f8c8d;
+    color: #7f8c8d; /* Mantido */
 }
 
 header a {
-    color: #3498db;
+    color: #e67e22; /* Laranja médio */
     text-decoration: none;
 }
 
@@ -67,10 +62,12 @@ nav ul li {
 nav ul li a {
     text-decoration: none;
     font-size: 1rem;
-    color: #3498db;
+    color: #e67e22; /* Substituído por laranja */
+    transition: color 0.3s ease;
 }
 
 nav ul li a:hover {
+    color: #d35400; /* Laranja forte */
     text-decoration: underline;
 }
 
@@ -81,16 +78,16 @@ section {
 
 section h2 {
     font-size: 1.8rem;
-    color: #2c3e50;
+    color: #2c3e50; /* Mantido */
     margin-bottom: 10px;
-    border-bottom: 2px solid #3498db;
+    border-bottom: 2px solid #f39c12; /* Laranja claro substituindo o azul */
     padding-bottom: 5px;
 }
 
 section p,
 section ul {
     font-size: 1rem;
-    color: #555;
+    color: #555; /* Mantido */
 }
 
 section ul {
@@ -103,31 +100,123 @@ section ul li {
 
 article h3 {
     font-size: 1.5rem;
-    color: #2c3e50;
+    color: #2c3e50; /* Mantido */
 }
 
 article h4 {
     font-size: 1.2rem;
-    color: #7f8c8d;
+    color: #7f8c8d; /* Mantido */
     margin-bottom: 10px;
 }
 
 /* Contato */
 #contato a {
-    color: #3498db;
+    color: #e67e22; /* Laranja médio */
     text-decoration: none;
 }
 
 #contato a:hover {
     text-decoration: underline;
+    color: #d35400; /* Laranja forte */
 }
 
 /* Rodapé */
 footer {
     text-align: center;
     font-size: 0.9rem;
-    color: #7f8c8d;
+    color: #7f8c8d; /* Mantido */
     margin-top: 40px;
+}
+
+/* Estilização da seção de projetos */
+.projetos-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.projeto-card {
+    background-color: #f4f4f4; /* Fundo laranja claro */
+    border: 2px solid #f39c12; /* Borda laranja */
+    border-radius: 8px;
+    padding: 15px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.projeto-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.projeto-card h3 {
+    font-size: 1.5rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.projeto-card p {
+    font-size: 1rem;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.projeto-card a {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f39c12; /* Botão laranja */
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+.projeto-card a:hover {
+    background-color: #d87a0d; /* Laranja mais escuro */
+}
+
+
+/* Formulário */
+form {
+    background-color: ##f4f4f4; /* Fundo laranja muito claro */
+    padding: 20px;
+  
+}
+
+form input,
+form textarea {
+    padding: 10px;
+    border: 1px solid #e67e22; /* Laranja médio */
+    border-radius: 5px;
+    font-size: 1rem;
+    color: #333; /* Mantido */
+}
+
+form input:focus,
+form textarea:focus {
+    outline: none;
+    border-color: #d35400; /* Laranja forte no foco */
+    box-shadow: 0 0 5px rgba(211, 84, 0, 0.5);
+}
+
+form button {
+    background-color: #e67e22; /* Laranja médio */
+    color: #fff; /* Texto branco */
+    border: none;
+    padding: 10px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+form button:hover {
+    background-color: #d35400; /* Laranja forte no hover */
 }
 
 /* Responsividade */
