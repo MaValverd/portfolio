@@ -7,14 +7,16 @@
     <title>Portfólio Pessoal (CV online) - Mayara Valverde</title>
     <link rel="stylesheet" href="style/style.css"> 
 </head>
+<!--
+Aluna: Mayara Cristina Valverde
+RU: 4745153 
+-->
 <body>
-
     <!-- Cabeçalho com nome e dados de contato -->
     <header>
-        <h1>Mayara Valverde</h1>
-        <p>Belo Horizonte - MG
-        </br>        
-        <a href="https://linkedin.com/in/mayara-valverde/" target="_blank">linkedin.com/in/mayara-valverde/</a></p>
+        <h1>Muito prazer, seja bem vindo ao meu Portfolio.</h1>
+          
+        
     </header>
 
     <!-- Navegação com links para âncoras das seções -->
@@ -23,15 +25,21 @@
             <li><a href="#sobre">Sobre</a></li>
             <li><a href="#resumo">Resumo Profissional</a></li>
             <li><a href="#experiencia">Experiência Profissional</a></li>
-            <li><a href="#habilidades">Habilidades</a></li>
+            <li><a href="#habilidades">Formação e Habilidades</a></li>
+            <li><a href="#projeto">Projetos</a></li>
             <li><a href="#contato">Contato</a></li>
         </ul>
     </nav>
 
     <!-- Seção de introdução pessoal -->
     <section id="sobre">
-     <h2>Objetivo</h2>
-     <p>Busco oportunidade para atuar em área de projetos onde eu possa aplicar e expandir meus conhecimentos, ao mesmo tempo em que estou aberta a novos desafios que me permitam aprender e crescer.</p>
+     <h2></h2>
+     <br>
+     <p>Me chamo Mayara Valverde, tenho 30 anos e estou em processo de mudança de carreira. Nasci em Santos/SP mas atualmente me mudei para Belo Horizonte/MG com minha esposa e nossos filhos Pets.</p>
+     <br>
+     <div>
+        <img src="images/avatar.jpeg" alt="Foto de Mayara Valverde"/>
+    </div>
     </section>
 
     <!-- Seção de resumo profissional -->
@@ -98,7 +106,7 @@
     </section>
 
     <!-- Seção de Hard Skills -->
-    <section id="experiencia">
+    <section id="habilidades">
         <h2>Hard Skills</h2>
         <article>
           <h3>Graduação – Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
@@ -125,7 +133,7 @@
     </section>
 
     <!-- Seção de Soft Skills -->
-    <section id="habilidades">
+    <section>
         <h2>Soft Skills</h2>
         <ul>
             <li>Líderança e Resiliência;</li>
@@ -142,15 +150,37 @@
         </ul>
     </section>
 
+    <section id="projeto">
+        <h2>Projetos</h2>
+        <div class="projetos-container">
+            <div class="projeto-card">
+                <h3>Building Market</h3>
+                <p>Protótipo de design e experiência do usuário para um marketplace inovador.</p>
+                <a href="https://www.figma.com/proto/CrQRfqzUyLoBjZVd5nLRgl/Untitled?node-id=1-10639&starting-point-node-id=1%3A10639&t=AYmvcUS2bbe8Un4R-1" 
+                   target="_blank">Visualizar Projeto</a>
+    </section>
+
     <!-- Seção de contato -->
     <section id="contato">
      <h2>Contato</h2>
-     <p>Você pode entrar em contato comigo através do e-mail <a href="mailto:mayara.valverde@hotmail.com">mayara.valverde@hotmail.com</a> ou pelo telefone/wpp (13) 99680-1539.</p>
+     <p>Você pode entrar em contato comigo através do e-mail <a href="mailto:mayara.valverde@hotmail.com">mayara.valverde@hotmail.com</a> ou pelo telefone/wpp (13) 99680-1539. Fique a vontade para conectar no <a href="https://linkedin.com/in/mayara-valverde/" target="_blank">LinkedIn</a>.</p></p>
+     <form onsubmit="enviarMensagem(event)">
+        <div class="input-box">
+            <input type="text" placeholder="Nome completo" required>
+            <input type="email" placeholder="E-mail" required>
+        </div>
+        <br>
+        <div class="input-box">
+            <textarea cols="50" rows="8" placeholder="Mensagem" required></textarea>
+        </div>
+        <br>
+        <button type="submit">Enviar Mensagem</button>
+    </form>
     </section>
 
     <!-- Rodapé -->
     <footer>
-      <p>&copy; 2024 Mayara Valverde. Todos os direitos reservados.</p>
+      <p>&copy; 2024 Mayara Valverde - RU: 4745153. Todos os direitos reservados.</p>
     </footer>
 
 </body>
